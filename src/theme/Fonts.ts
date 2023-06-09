@@ -6,17 +6,36 @@ import { ThemeVariables } from '../../@types/theme';
 
 export default function ({ FontSize, Colors }: ThemeVariables) {
   return StyleSheet.create({
+    errorTiny: {
+      fontSize: FontSize.veryTiney,
+      color: Colors.error,
+    },
+    logoutText: {
+      fontSize: FontSize.small,
+      color: Colors.error,
+    },
+    textVeryTiny: {
+      fontSize: 9,
+    },
+    text12tiny: {
+      fontSize: FontSize.veryTiney
+    },
     textTiny: {
       fontSize: FontSize.tiny,
-      color: Colors.textGray400,
+      color: Colors.textTiny,
     },
     textSmall: {
       fontSize: FontSize.small,
-      color: Colors.textGray400,
+      // color: Colors.textGray400,
     },
     textRegular: {
       fontSize: FontSize.regular,
       color: Colors.textGray400,
+    },
+    // priamry regular
+    textPrimaryRegular: {
+      fontSize: FontSize.small,
+      color: Colors.primary,
     },
     textLarge: {
       fontSize: FontSize.large,
@@ -34,9 +53,9 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
       color: Colors.textGray800,
     },
     titleRegular: {
-      fontSize: FontSize.regular * 2,
+      fontSize: FontSize.regular * 1.5,
       fontWeight: 'bold',
-      color: Colors.textGray800,
+      color: Colors.primary,
     },
     titleLarge: {
       fontSize: FontSize.large * 2,

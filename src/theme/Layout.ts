@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { ThemeVariables } from '../../@types/theme';
 
-export default function ({}: ThemeVariables) {
+export default function ({ }: ThemeVariables) {
   return StyleSheet.create({
     /* Column Layouts */
     col: {
@@ -29,6 +29,11 @@ export default function ({}: ThemeVariables) {
     },
     rowReverse: {
       flexDirection: 'row-reverse',
+    },
+    rowSBCenter:{
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
     },
     rowCenter: {
       flexDirection: 'row',
@@ -82,6 +87,9 @@ export default function ({}: ThemeVariables) {
     },
     selfStretch: {
       alignSelf: 'stretch',
+    },
+    selfCenter: {
+      alignSelf: "center"
     },
     /* Sizes Layouts */
     fill: {

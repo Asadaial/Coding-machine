@@ -5,6 +5,7 @@
  * That allows to change them more easily later on.
  */
 
+import { RFPercentage } from 'react-native-responsive-fontsize';
 import { ThemeNavigationColors } from '../../@types/theme';
 
 /**
@@ -15,20 +16,27 @@ export const Colors = {
   inputBackground: '#FFFFFF',
   white: '#ffffff',
   //Typography
+  textTiny:"#889FB4",
   textGray800: '#000000',
   textGray400: '#4D4D4D',
   textGray200: '#A1A1A1',
-  primary: '#E14032',
+  primary: '#1F73BB',
+
+  // currently green is secondary
+  secondary:'#86A6C3',
+  // tertiary is button color now
+  tertiary:'#F6931D',
   success: '#28a745',
   error: '#dc3545',
   //ComponentColors
   circleButtonBackground: '#E1E1EF',
   circleButtonColor: '#44427D',
+  neutral: "#E5F0F6",
 };
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {
   primary: Colors.primary,
-  background: '#EFEFEF',
+  background: Colors.neutral,
   card: '#EFEFEF',
 };
 
@@ -36,6 +44,7 @@ export const NavigationColors: Partial<ThemeNavigationColors> = {
  * FontSize
  */
 export const FontSize = {
+  veryTiney:12,
   tiny: 14,
   small: 16,
   regular: 20,
@@ -45,7 +54,7 @@ export const FontSize = {
 /**
  * Metrics Sizes
  */
-const tiny = 10;
+const tiny = RFPercentage(1);
 const small = tiny * 2; // 20
 const regular = tiny * 3; // 30
 const large = regular * 2; // 60
