@@ -8,10 +8,9 @@ export default function ({ }: ThemeVariables) {
     splash: {
       splash: require('./assets/images/Splash.png')
     },
-    icons: {
-      colors: require('./assets/images/colorswatch.png'),
-      send: require('./assets/images/send.png'),
-      translate: require('./assets/images/translate.png'),
+    Drawer: {
+   DrawerHeader:require('./assets/images/DrawerHeader.png')
+
     },
   };
 }

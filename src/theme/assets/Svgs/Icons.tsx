@@ -24,11 +24,11 @@ const SearchIcon = ({ style, stroke, onPress }: AppleProps) => {
     </Svg>
   );
 };
-const DrawerIcon = ({ style, stroke, onPress }: AppleProps) => {
+const DrawerIcon = ({ style, stroke }: AppleProps) => {
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
-      onPress={onPress}
+
       style={style}
       viewBox="0 0 27.3 23.785"
     >

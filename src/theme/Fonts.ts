@@ -12,7 +12,7 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
     },
     logoutText: {
       fontSize: FontSize.small,
-      color: Colors.error,
+      // color: Colors.error,
     },
     textVeryTiny: {
       fontSize: 9,
