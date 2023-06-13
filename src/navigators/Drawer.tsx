@@ -5,6 +5,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import MainNavigator from './Main';
 import DrawerContent from '../components/DrawerContent/DrawerContent';
 import { useNavigation } from '@react-navigation/native';
+import BottomTabs from './BottomTab';
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
@@ -22,8 +23,8 @@ function MyDrawer() {
         headerShown: false,
       }}
     >
-      <Drawer.Screen name="Tabs" component={MainNavigator} />
-      {/* <Drawer.Screen name="Tabs" component={BottomTabs} /> */}
+      {/* <Drawer.Screen name="Tabs" component={MainNavigator} /> */}
+      <Drawer.Screen name="Tabs" component={BottomTabs} />
     </Drawer.Navigator>
   );
 }

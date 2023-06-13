@@ -119,7 +119,7 @@ const Frame = ({
         )}
 
         {content}
-        {!hideBottomNav && (
+        {/* {!hideBottomNav && (
           <View style={styles.nav}>
             {LINKS.map((l, i) => (
               <MenuLink
@@ -130,7 +130,7 @@ const Frame = ({
               />
             ))}
           </View>
-        )}
+        )} */}
       </>
     )
   );

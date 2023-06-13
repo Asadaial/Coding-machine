@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.myapp"
+    namespace "com.a2ksols.Pocketisai"
     defaultConfig {
-        applicationId "com.myapp"
+        applicationId "com.a2ksols.Pocketisai"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

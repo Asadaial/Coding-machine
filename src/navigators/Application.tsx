@@ -23,7 +23,7 @@ const Stack = createStackNavigator();
 
 // @refresh reset
 const ApplicationNavigator = () => {
-  const { Layout, darkMode, NavigationTheme } = useTheme();
+  const { Layout, darkMode, NavigationTheme,Colors } = useTheme();
   const { colors } = NavigationTheme;
 
   const navigationRef = useNavigationContainerRef();
@@ -31,26 +31,29 @@ const ApplicationNavigator = () => {
   useFlipper(navigationRef);
 
   return (
-    <View style={[Layout.fill, { backgroundColor: colors.card,marginTop:Platform.OS=="ios"? heightPercentageToDP(4):heightPercentageToDP(0) }]}>
-      <NavigationContainer 
-      theme={NavigationTheme}
-       ref={navigationRef}>
-        <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} />
-        <Stack.Navigator screenOptions={{ 
-          headerShown: false,
-          
-         }}>
+    <View
+      style={[Layout.fill, { flex: 1, backgroundColor:Colors.white }]}
+    >
+      <StatusBar
+        translucent={true}
+        barStyle={darkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={"transparent"}
+      />
+      <SafeAreaView style={[Layout.fill, { backgroundColor:Colors.white,paddingTop:Platform.OS=="android"?25:0}]}>
+      <NavigationContainer theme={NavigationTheme} ref={navigationRef}>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
           <Stack.Screen name="Startup" component={Login} />
-          
+
           <Stack.Screen name="Main" component={MyDrawer} />
-          {/* <Stack.Screen name={HOME_ROUTE} component={HomeScreen} />
-          <Stack.Screen name={MORE_ROUTE} component={SettingScreen} />
-          <Stack.Screen name={LEADS_DETAILS_ROUTE} component={LeadesDetails} />
-          <Stack.Screen name={LEADES_FORM} component={LeadsForm} /> */}
-         
+
         </Stack.Navigator>
       </NavigationContainer>
-     </View>
+      </SafeAreaView>
+    </View>
   );
 };
 

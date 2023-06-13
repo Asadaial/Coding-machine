@@ -1,4 +1,4 @@
-package com.myapp;
+package com.a2ksols.Pocketisai;
 
 import android.os.Bundle;//splash
 import org.devio.rn.splashscreen.SplashScreen;//splash
@@ -20,7 +20,7 @@ public class MainActivity extends ReactActivity {
     }
   @Override
   protected String getMainComponentName() {
-    return "MyApp";
+    return "PocketISAi";
   }
 
   /**
