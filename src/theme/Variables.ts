@@ -23,9 +23,9 @@ export const Colors = {
   primary: '#1F73BB',
 
   // currently green is secondary
-  secondary:'#86A6C3',
+  secondary:'#F6931D',
   // tertiary is button color now
-  tertiary:'#F6931D',
+  tertiary:'#86A6C3',
   success: '#28a745',
   error: '#dc3545',
   //ComponentColors

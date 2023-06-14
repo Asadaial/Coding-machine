@@ -1,7 +1,7 @@
 import React from 'react';
 import { Platform, Pressable, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeScreen, LeadsForm } from '../screens';
+import { HomeScreen, LeadsForm, SettingScreen } from '../screens';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
@@ -121,8 +121,8 @@ const BottomTabs = () => {
               </>
             ),
           }}
-          name="Chats"
-          component={LeadsForm}
+          name="Settings"
+          component={SettingScreen}
         />
       </Tab.Navigator>
     </View>

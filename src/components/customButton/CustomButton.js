@@ -115,7 +115,7 @@ export const styles = (type, disabled) => {
         style = {
             button: {
                 ...common,
-                backgroundColor: disabled ? Colors.neutral : Colors.tertiary,
+                backgroundColor: disabled ? Colors.neutral : Colors.secondary,
                 height,
             },
             buttonText: {

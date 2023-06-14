@@ -39,7 +39,7 @@ const ApplicationNavigator = () => {
         barStyle={darkMode ? 'light-content' : 'dark-content'}
         backgroundColor={"transparent"}
       />
-      <SafeAreaView style={[Layout.fill, { backgroundColor:Colors.white,paddingTop:Platform.OS=="android"?25:0}]}>
+      <SafeAreaView style={[Layout.fill, { backgroundColor:Colors.white,paddingTop:Platform.OS=="android"?StatusBar.currentHeight:0}]}>
       <NavigationContainer theme={NavigationTheme} ref={navigationRef}>
         <Stack.Navigator
           screenOptions={{

@@ -4,7 +4,7 @@ import Frame from '../../components/Frame/Frame'
 
 const SettingScreen = () => {
   return (
-    <Frame>
+    <Frame >
       <Text>SettingScreen</Text>
     </Frame>
   )
